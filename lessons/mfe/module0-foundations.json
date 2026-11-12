@@ -1,0 +1,228 @@
+{
+ "deck": "module0-foundations.json",
+ "lessons": [
+  {
+   "topic": "fractions",
+   "title": "Fractions without panic",
+   "minutes": 4,
+   "pages": [
+    {
+     "kind": "idea",
+     "title": "A fraction is just division",
+     "text": "a/b means a ÷ b. The top is how many pieces you have, the bottom is what size they are.\n\nThree moves cover almost everything:\n• MULTIPLY: top × top, bottom × bottom. Easy.\n• DIVIDE: flip the second one, then multiply.\n• ADD / SUBTRACT: only once the bottoms match."
+    },
+    {
+     "kind": "example",
+     "title": "Adding needs a common bottom",
+     "q": "1/2 + 1/3",
+     "steps": [
+      {
+       "do": "Bottoms 2 and 3. Common bottom: 2·3 = 6",
+       "why": "You can only add pieces that are the same size."
+      },
+      {
+       "do": "1/2 = 3/6",
+       "why": "Multiply top and bottom by 3. Same value, new size."
+      },
+      {
+       "do": "1/3 = 2/6",
+       "why": "Multiply top and bottom by 2."
+      },
+      {
+       "do": "3/6 + 2/6 = 5/6",
+       "why": "Add the tops, keep the bottom."
+      }
+     ],
+     "answer": "5/6"
+    },
+    {
+     "kind": "idea",
+     "title": "Canceling: only what's multiplied",
+     "text": "(3x)/(6x) → cancel x, then 3/6 = 1/2. Fine, because x is MULTIPLIED on both top and bottom.\n\n(x + 2)/x → you CANNOT cancel the x. It's added on top, not multiplied.\n\nSame idea: (x + 3)/x = x/x + 3/x = 1 + 3/x (splitting the TOP is fine), but 1/(x + 3) can't be split."
+    },
+    {
+     "kind": "check",
+     "q": "1/2 + 1/4 = ?",
+     "choices": [
+      "3/4",
+      "2/6",
+      "1/6",
+      "2/4"
+     ],
+     "answer_index": 0,
+     "why": "Common bottom 4: 2/4 + 1/4 = 3/4. Never add bottoms."
+    }
+   ]
+  },
+  {
+   "topic": "exponents",
+   "title": "Exponent rules (the 6 you need)",
+   "minutes": 4,
+   "pages": [
+    {
+     "kind": "idea",
+     "title": "What an exponent means",
+     "text": "x³ = x·x·x. Every rule comes from that.\n\n• x³·x² = (x·x·x)(x·x) = x⁵ → multiply: ADD powers\n• x⁵/x² = x³ → divide: SUBTRACT powers\n• (x²)³ = x²·x²·x² = x⁶ → power of a power: MULTIPLY\n• x⁰ = 1\n• x⁻ⁿ = 1/xⁿ → negative = flip to the bottom\n• (2x)³ = 8x³ → the power hits everything in the brackets"
+    },
+    {
+     "kind": "idea",
+     "title": "Why calculus cares",
+     "text": "The power rule (xⁿ → n·xⁿ⁻¹) only works on xⁿ. So before differentiating, rewrite everything as x to a power:\n\n1/x² → x⁻²\n√x → x^(1/2)\n3/√x → 3x^(−1/2)\n\nRewriting is half the problem on most quiz questions."
+    },
+    {
+     "kind": "example",
+     "title": "Rewrite, then differentiate",
+     "q": "y = 4/x³",
+     "steps": [
+      {
+       "do": "Rewrite: y = 4x⁻³",
+       "why": "x³ on the bottom flips up with a minus."
+      },
+      {
+       "do": "Bring the power down: 4·(−3) = −12",
+       "why": "Power rule step 1."
+      },
+      {
+       "do": "Lower the power by 1: −3 − 1 = −4",
+       "why": "Going down from −3 means MORE negative."
+      },
+      {
+       "do": "y′ = −12x⁻⁴ = −12/x⁴",
+       "why": "Flip back for a clean answer."
+      }
+     ],
+     "answer": "−12/x⁴"
+    },
+    {
+     "kind": "check",
+     "q": "x² · x⁵ = ?",
+     "choices": [
+      "x⁷",
+      "x¹⁰",
+      "2x⁷",
+      "x³"
+     ],
+     "answer_index": 0,
+     "why": "Same base, multiplying → add the powers: 2 + 5 = 7."
+    }
+   ]
+  },
+  {
+   "topic": "roots",
+   "title": "Roots are just fraction exponents",
+   "minutes": 3,
+   "pages": [
+    {
+     "kind": "idea",
+     "title": "The one idea",
+     "text": "√x = x^(1/2)\n∛x = x^(1/3)\n√(x³) = x^(3/2)\n\nThe exponent is a fraction: TOP = the power, BOTTOM = which root.\n\nOnce a root is an exponent, all the exponent rules work on it."
+    },
+    {
+     "kind": "example",
+     "title": "Differentiate a root",
+     "q": "y = √x",
+     "steps": [
+      {
+       "do": "y = x^(1/2)",
+       "why": "Rewrite the root as a power."
+      },
+      {
+       "do": "½ · x^(1/2 − 1)",
+       "why": "Power rule: bring ½ down, subtract 1."
+      },
+      {
+       "do": "1/2 − 1 = 1/2 − 2/2 = −1/2",
+       "why": "Fraction subtraction: give 1 the same bottom."
+      },
+      {
+       "do": "½ x^(−1/2) = 1/(2√x)",
+       "why": "Negative → bottom, ½ power → root."
+      }
+     ],
+     "answer": "y′ = 1/(2√x)"
+    },
+    {
+     "kind": "idea",
+     "title": "What roots don't do",
+     "text": "√(ab) = √a·√b ✓\n√(a/b) = √a/√b ✓\n√(a + b) = √a + √b ✗  (√(9+16) = 5, not 7)\n\nSame pattern as fractions and logs: sums don't split."
+    },
+    {
+     "kind": "check",
+     "q": "1/√x as a power of x is…",
+     "choices": [
+      "x^(−1/2)",
+      "x^(1/2)",
+      "x⁻²",
+      "x²"
+     ],
+     "answer_index": 0,
+     "why": "Root → ½. On the bottom → negative. Together: x^(−½)."
+    }
+   ]
+  },
+  {
+   "topic": "logs",
+   "title": "Logs: the 'what power?' question",
+   "minutes": 5,
+   "pages": [
+    {
+     "kind": "idea",
+     "title": "What a log asks",
+     "text": "log₂ 8 asks: 2 to the WHAT gives 8? Answer: 3, because 2³ = 8.\n\nln x is the same thing with base e (≈ 2.718): ln x asks 'e to the what gives x?'\n\nSo:\n• ln 1 = 0 (e⁰ = 1)\n• ln e = 1 (e¹ = e)\n• ln and e undo each other: ln(eˣ) = x, e^(ln x) = x"
+    },
+    {
+     "kind": "idea",
+     "title": "The three log rules",
+     "text": "• ln(ab) = ln a + ln b → times becomes plus\n• ln(a/b) = ln a − ln b → divide becomes minus\n• ln(aⁿ) = n ln a → a power comes out front\n\nAnd the trap: ln(a + b) has NO rule. Leave it alone."
+    },
+    {
+     "kind": "example",
+     "title": "Use the rules before differentiating",
+     "q": "y = ln(x² / √x)",
+     "steps": [
+      {
+       "do": "√x = x^(1/2)",
+       "why": "Roots as powers first."
+      },
+      {
+       "do": "x² / x^(1/2) = x^(2 − 1/2) = x^(3/2)",
+       "why": "Dividing → subtract powers."
+      },
+      {
+       "do": "y = ln(x^(3/2)) = (3/2) ln x",
+       "why": "Power comes out front."
+      },
+      {
+       "do": "y′ = (3/2)(1/x) = 3/(2x)",
+       "why": "Derivative of ln x is 1/x."
+      }
+     ],
+     "answer": "y′ = 3/(2x)"
+    },
+    {
+     "kind": "check",
+     "q": "ln(x⁴) = ?",
+     "choices": [
+      "4 ln x",
+      "(ln x)⁴",
+      "ln 4 · ln x",
+      "x ln 4"
+     ],
+     "answer_index": 0,
+     "why": "A power INSIDE the log comes out front as a multiplier."
+    },
+    {
+     "kind": "check",
+     "q": "ln(a + b) = ?",
+     "choices": [
+      "No rule: leave it as ln(a + b)",
+      "ln a + ln b",
+      "ln a · ln b"
+     ],
+     "answer_index": 0,
+     "why": "ln a + ln b is ln(ab), the product. Sums inside a log don't split."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+build/
+icon/AppIcon.iconset/
+.DS_Store
+xcuserdata/
+
+# Personal schedule and to-dos
+tasks.json
+upcoming.json
+
+# Course material (from NYU course slides and textbooks), kept private
+banks/*/*
+lessons/*/*
+!banks/mfe/module0-foundations.json
+!lessons/mfe/module0-foundations.json
+french-anki/book/
+french-anki/cards.csv
+french-anki/*.apkg
+
+# Local dev notes
+CLAUDE.md

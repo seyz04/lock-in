@@ -1,0 +1,519 @@
+{
+ "deck": "Foundations: fractions, exponents, roots, logs",
+ "stage": "current",
+ "source": "Standard algebra review (prerequisite for MFE Module 6 derivatives: power rule with negative/fraction exponents, ln and eˣ rules)",
+ "items": [
+  {
+   "type": "fill",
+   "q": "1/3 + 1/4 = ___  (write as a fraction)",
+   "answer": [
+    "7/12"
+   ],
+   "steps": [
+    "You can only add fractions with the SAME bottom.",
+    "Common bottom: 3·4 = 12.",
+    "1/3 = 4/12 (×4 top and bottom), 1/4 = 3/12 (×3 top and bottom).",
+    "4/12 + 3/12 = 7/12. Add the tops, keep the bottom."
+   ],
+   "trap": "1/3 + 1/4 is NOT 2/7. Never add the bottoms.",
+   "topic": "fractions",
+   "why": "4/12 + 3/12 = 7/12. Add the tops, keep the bottom."
+  },
+  {
+   "type": "fill",
+   "q": "2/3 · 9/4 = ___  (simplest form)",
+   "answer": [
+    "3/2",
+    "1.5"
+   ],
+   "steps": [
+    "Multiplying: top×top, bottom×bottom. No common bottom needed.",
+    "2·9 = 18 and 3·4 = 12, so 18/12.",
+    "Simplify: both divide by 6 → 3/2."
+   ],
+   "trap": "Multiplying is the EASY one. People hunt for a common denominator here for no reason.",
+   "topic": "fractions",
+   "why": "Simplify: both divide by 6 → 3/2."
+  },
+  {
+   "type": "fill",
+   "q": "(3/5) ÷ (9/10) = ___",
+   "answer": [
+    "2/3"
+   ],
+   "steps": [
+    "Dividing by a fraction = multiplying by its flip (reciprocal).",
+    "3/5 · 10/9",
+    "= 30/45",
+    "Simplify by 15 → 2/3."
+   ],
+   "trap": "Flip the SECOND fraction only, then multiply.",
+   "topic": "fractions",
+   "why": "Simplify by 15 → 2/3."
+  },
+  {
+   "type": "fill",
+   "q": "1 / (1/x) = ___",
+   "answer": [
+    "x"
+   ],
+   "steps": [
+    "Dividing by 1/x = multiplying by its flip, x/1.",
+    "1 · x = x."
+   ],
+   "trap": "A fraction on the bottom flips up.",
+   "topic": "fractions",
+   "why": "1 · x = x."
+  },
+  {
+   "type": "mc",
+   "q": "Which one is equal to (x + 3)/x ?",
+   "choices": [
+    "1 + 3/x",
+    "3",
+    "x + 3/x",
+    "1 + 3"
+   ],
+   "answer": 0,
+   "why": "Split the top over the same bottom: x/x + 3/x = 1 + 3/x.",
+   "topic": "fractions",
+   "trap": "You can split a sum on TOP, but never a sum on the BOTTOM: 1/(x+3) ≠ 1/x + 1/3."
+  },
+  {
+   "type": "mc",
+   "q": "Is 1/(a + b) = 1/a + 1/b ?",
+   "choices": [
+    "No, never in general",
+    "Yes, always",
+    "Only if a = b"
+   ],
+   "answer": 0,
+   "why": "Try a = b = 1: 1/2 vs 1 + 1 = 2. Not equal.",
+   "topic": "fractions",
+   "trap": "Splitting a sum on the bottom is the #1 fraction mistake in calculus."
+  },
+  {
+   "type": "card",
+   "q": "Simplify  (x² · 3)/(6x)",
+   "steps": [
+    "Write it out: (3·x·x)/(6·x).",
+    "Cancel one x from top and bottom (it's a FACTOR, multiplied).",
+    "3/6 = 1/2.",
+    "Left: x/2."
+   ],
+   "answer": "x/2",
+   "trap": "You can only cancel things that are MULTIPLIED on top and bottom, not things that are added: (x+2)/x does NOT cancel to 2.",
+   "topic": "fractions"
+  },
+  {
+   "type": "card",
+   "q": "Combine into one fraction:  1/x − 1/x²",
+   "steps": [
+    "Common bottom: x² (x² already contains x).",
+    "1/x = x/x² (multiply top and bottom by x).",
+    "x/x² − 1/x² = (x − 1)/x²."
+   ],
+   "answer": "(x − 1)/x²",
+   "trap": "Shows up when you simplify derivatives of ln x and 1/x. Use the BIGGER power as the common bottom.",
+   "topic": "fractions"
+  },
+  {
+   "type": "fill",
+   "q": "Write 0.25 as a fraction in simplest form: ___",
+   "answer": [
+    "1/4"
+   ],
+   "steps": [
+    "0.25 = 25/100.",
+    "Divide top and bottom by 25 → 1/4."
+   ],
+   "trap": "Quarters: 0.25 = 1/4, 0.5 = 1/2, 0.75 = 3/4. Worth memorizing.",
+   "topic": "fractions",
+   "why": "Divide top and bottom by 25 → 1/4."
+  },
+  {
+   "type": "fill",
+   "q": "x³ · x⁴ = x^___",
+   "answer": [
+    "7"
+   ],
+   "steps": [
+    "Same base, multiplying → ADD the powers.",
+    "3 + 4 = 7."
+   ],
+   "trap": "x³·x⁴ is NOT x¹². Multiplying the bases means adding the exponents.",
+   "topic": "exponents",
+   "why": "3 + 4 = 7."
+  },
+  {
+   "type": "fill",
+   "q": "x⁸ / x² = x^___",
+   "answer": [
+    "6"
+   ],
+   "steps": [
+    "Same base, dividing → SUBTRACT the powers.",
+    "8 − 2 = 6."
+   ],
+   "trap": "Not x⁴. Dividing powers subtracts, it doesn't divide.",
+   "topic": "exponents",
+   "why": "8 − 2 = 6."
+  },
+  {
+   "type": "fill",
+   "q": "(x³)² = x^___",
+   "answer": [
+    "6"
+   ],
+   "steps": [
+    "Power of a power → MULTIPLY.",
+    "3 · 2 = 6."
+   ],
+   "trap": "(x³)² means x³·x³ = x⁶, not x⁹ and not x⁵.",
+   "topic": "exponents",
+   "why": "3 · 2 = 6."
+  },
+  {
+   "type": "fill",
+   "q": "x⁰ = ___  (for x ≠ 0)",
+   "answer": [
+    "1"
+   ],
+   "steps": [
+    "x²/x² = x^(2−2) = x⁰.",
+    "But anything divided by itself is 1.",
+    "So x⁰ = 1."
+   ],
+   "trap": "x⁰ is 1, not 0.",
+   "topic": "exponents",
+   "why": "So x⁰ = 1."
+  },
+  {
+   "type": "mc",
+   "q": "1/x³ written as a power of x:",
+   "choices": [
+    "x⁻³",
+    "x^(1/3)",
+    "−x³",
+    "x³"
+   ],
+   "answer": 0,
+   "why": "A power on the bottom moves to the top with a minus sign: 1/xⁿ = x⁻ⁿ.",
+   "topic": "exponents",
+   "trap": "Negative exponent = flip to the bottom. It does NOT make the number negative."
+  },
+  {
+   "type": "fill",
+   "q": "2⁻³ = ___  (as a fraction)",
+   "answer": [
+    "1/8"
+   ],
+   "steps": [
+    "Negative exponent → flip: 2⁻³ = 1/2³.",
+    "2³ = 8.",
+    "So 1/8."
+   ],
+   "trap": "2⁻³ is NOT −8 and NOT −6.",
+   "topic": "exponents",
+   "why": "So 1/8."
+  },
+  {
+   "type": "card",
+   "q": "Rewrite  5/x²  so you can use the power rule, then differentiate",
+   "steps": [
+    "Move x² to the top: 5x⁻².",
+    "Power rule: bring the −2 down, lower the power by 1 → 5·(−2)x⁻³.",
+    "= −10x⁻³ = −10/x³."
+   ],
+   "answer": "−10/x³",
+   "trap": "Lower the power by 1 even when it's negative: −2 − 1 = −3, not −1.",
+   "topic": "exponents"
+  },
+  {
+   "type": "fill",
+   "q": "(2x)³ = ___x³",
+   "answer": [
+    "8"
+   ],
+   "steps": [
+    "The power hits EVERYTHING inside the brackets.",
+    "2³·x³ = 8x³."
+   ],
+   "trap": "(2x)³ is not 2x³. The 2 gets cubed too.",
+   "topic": "exponents",
+   "why": "2³·x³ = 8x³."
+  },
+  {
+   "type": "mc",
+   "q": "(x + y)² equals:",
+   "choices": [
+    "x² + 2xy + y²",
+    "x² + y²",
+    "2x + 2y",
+    "x²y²"
+   ],
+   "answer": 0,
+   "why": "(x+y)(x+y) = x² + xy + yx + y² = x² + 2xy + y².",
+   "topic": "exponents",
+   "trap": "Powers don't split over addition: (x + y)² ≠ x² + y²."
+  },
+  {
+   "type": "mc",
+   "q": "√x written as a power:",
+   "choices": [
+    "x^(1/2)",
+    "x²",
+    "x⁻²",
+    "2x"
+   ],
+   "answer": 0,
+   "why": "A square root is the ½ power. Cube root is the ⅓ power.",
+   "topic": "roots",
+   "trap": "√x = x^½. This is the key to differentiating roots."
+  },
+  {
+   "type": "fill",
+   "q": "∛x = x^___  (write as a fraction)",
+   "answer": [
+    "1/3"
+   ],
+   "steps": [
+    "The little 3 on the root becomes the bottom of the exponent.",
+    "∛x = x^(1/3)."
+   ],
+   "trap": "The root number goes on the BOTTOM of the fraction.",
+   "topic": "roots",
+   "why": "∛x = x^(1/3)."
+  },
+  {
+   "type": "mc",
+   "q": "√(x³) as a power of x:",
+   "choices": [
+    "x^(3/2)",
+    "x^(2/3)",
+    "x⁶",
+    "x^(1/6)"
+   ],
+   "answer": 0,
+   "why": "Power on top, root on the bottom: √(x³) = x^(3/2).",
+   "topic": "roots",
+   "trap": "Top = power inside, bottom = which root. x^(3/2) is 'square root of x cubed'."
+  },
+  {
+   "type": "mc",
+   "q": "1/√x as a power of x:",
+   "choices": [
+    "x^(−1/2)",
+    "x^(1/2)",
+    "x⁻²",
+    "−√x"
+   ],
+   "answer": 0,
+   "why": "√x = x^½, and on the bottom it flips with a minus: x^(−½).",
+   "topic": "roots",
+   "trap": "Two moves at once: root → ½, bottom → minus."
+  },
+  {
+   "type": "card",
+   "q": "Differentiate  y = √x",
+   "steps": [
+    "Rewrite: y = x^(1/2).",
+    "Power rule: bring ½ down, lower the power by 1: ½·x^(1/2 − 1).",
+    "1/2 − 1 = −1/2, so ½·x^(−1/2).",
+    "Back to roots: x^(−1/2) = 1/√x, so y′ = 1/(2√x)."
+   ],
+   "answer": "1/(2√x)",
+   "trap": "½ − 1 = −½. Write it as a fraction sum if you need to: 1/2 − 2/2 = −1/2.",
+   "topic": "roots"
+  },
+  {
+   "type": "fill",
+   "q": "√16 · √4 = ___",
+   "answer": [
+    "8"
+   ],
+   "steps": [
+    "√16 = 4 and √4 = 2.",
+    "4 · 2 = 8. (Also √(16·4) = √64 = 8. Roots split over multiplication.)"
+   ],
+   "trap": "Roots split over multiplication, but NOT over addition: √(9+16) = 5, not 3 + 4.",
+   "topic": "roots",
+   "why": "4 · 2 = 8. (Also √(16·4) = √64 = 8. Roots split over multiplication.)"
+  },
+  {
+   "type": "mc",
+   "q": "√(a + b) = √a + √b ?",
+   "choices": [
+    "No, not in general",
+    "Yes, always"
+   ],
+   "answer": 0,
+   "why": "√(9 + 16) = √25 = 5, but √9 + √16 = 7.",
+   "topic": "roots",
+   "trap": "Roots only split over × and ÷, never over + or −."
+  },
+  {
+   "type": "fill",
+   "q": "8^(2/3) = ___",
+   "answer": [
+    "4"
+   ],
+   "steps": [
+    "Do the root first (it makes the number smaller): ∛8 = 2.",
+    "Then the power: 2² = 4."
+   ],
+   "trap": "Bottom of the exponent = root, top = power. Root first keeps the numbers small.",
+   "topic": "roots",
+   "why": "Then the power: 2² = 4."
+  },
+  {
+   "type": "mc",
+   "q": "What does  log₂ 8 = 3  mean?",
+   "choices": [
+    "2³ = 8",
+    "8³ = 2",
+    "3² = 8",
+    "2 · 3 = 8"
+   ],
+   "answer": 0,
+   "why": "A log answers: 'what power do I raise the base to, to get this number?' 2 to the 3 is 8.",
+   "topic": "logs",
+   "trap": "Read log_b(x) as 'b to the what equals x?'"
+  },
+  {
+   "type": "fill",
+   "q": "log₁₀ 1000 = ___",
+   "answer": [
+    "3"
+   ],
+   "steps": [
+    "10 to the what = 1000?",
+    "10³ = 1000.",
+    "So 3."
+   ],
+   "trap": "Count the zeros for base 10.",
+   "topic": "logs",
+   "why": "So 3."
+  },
+  {
+   "type": "fill",
+   "q": "ln 1 = ___",
+   "answer": [
+    "0"
+   ],
+   "steps": [
+    "ln is log base e.",
+    "e to the what = 1? Anything to the 0 is 1.",
+    "So ln 1 = 0."
+   ],
+   "trap": "ln 1 = 0 and ln e = 1. Mix these up and everything after is wrong.",
+   "topic": "logs",
+   "why": "So ln 1 = 0."
+  },
+  {
+   "type": "fill",
+   "q": "ln e = ___",
+   "answer": [
+    "1"
+   ],
+   "steps": [
+    "e to the what = e?",
+    "e¹ = e.",
+    "So ln e = 1."
+   ],
+   "trap": "ln e = 1, not e.",
+   "topic": "logs",
+   "why": "So ln e = 1."
+  },
+  {
+   "type": "mc",
+   "q": "ln(a · b) =",
+   "choices": [
+    "ln a + ln b",
+    "ln a · ln b",
+    "ln a − ln b",
+    "ln(a + b)"
+   ],
+   "answer": 0,
+   "why": "Logs turn multiplication into addition. That's why log differentiation works.",
+   "topic": "logs",
+   "trap": "ln(ab) is a SUM of logs, not a product of logs."
+  },
+  {
+   "type": "mc",
+   "q": "ln(a / b) =",
+   "choices": [
+    "ln a − ln b",
+    "ln a / ln b",
+    "ln b − ln a",
+    "ln(a − b)"
+   ],
+   "answer": 0,
+   "why": "Division inside → subtraction outside.",
+   "topic": "logs",
+   "trap": "ln(a/b) ≠ ln a / ln b."
+  },
+  {
+   "type": "mc",
+   "q": "ln(x⁵) =",
+   "choices": [
+    "5 ln x",
+    "(ln x)⁵",
+    "ln 5 + ln x",
+    "x ln 5"
+   ],
+   "answer": 0,
+   "why": "A power inside comes out front as a multiplier.",
+   "topic": "logs",
+   "trap": "ln(x⁵) = 5 ln x, but (ln x)⁵ is something different. Watch where the power is."
+  },
+  {
+   "type": "card",
+   "q": "Simplify before differentiating:  y = ln( x³ √x )",
+   "steps": [
+    "√x = x^(1/2), so inside is x³·x^(1/2) = x^(3 + 1/2) = x^(7/2).",
+    "Power comes out front: y = (7/2) ln x.",
+    "Now differentiate: y′ = (7/2)·(1/x) = 7/(2x)."
+   ],
+   "answer": "y = (7/2) ln x, so y′ = 7/(2x)",
+   "trap": "Do the log rules FIRST. It turns a chain/product rule mess into one easy step.",
+   "topic": "logs"
+  },
+  {
+   "type": "card",
+   "q": "Simplify:  e^(ln 5)  and  ln(e⁴)",
+   "steps": [
+    "e and ln undo each other (like × and ÷).",
+    "e^(ln 5) = 5.",
+    "ln(e⁴) = 4."
+   ],
+   "answer": "5 and 4",
+   "trap": "e^(ln x) = x and ln(eˣ) = x. They cancel.",
+   "topic": "logs"
+  },
+  {
+   "type": "mc",
+   "q": "Is  ln(a + b) = ln a + ln b ?",
+   "choices": [
+    "No, there's no rule for a log of a sum",
+    "Yes"
+   ],
+   "answer": 0,
+   "why": "The product rule for logs is ln(ab) = ln a + ln b. There's nothing that splits ln(a + b).",
+   "topic": "logs",
+   "trap": "Like roots and fractions: sums inside DON'T split."
+  },
+  {
+   "type": "card",
+   "q": "Solve for x:  eˣ = 7",
+   "steps": [
+    "Take ln of both sides: ln(eˣ) = ln 7.",
+    "ln and e cancel: x = ln 7.",
+    "(≈ 1.95 on a calculator.)"
+   ],
+   "answer": "x = ln 7 ≈ 1.95",
+   "trap": "To get x out of an exponent, take ln of both sides.",
+   "topic": "logs"
+  }
+ ]
+}

@@ -1,0 +1,113 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+		EFD612ACC943390105A59998 = {isa = PBXBuildFile; fileRef = 83EC1A5330842BF301D88B15; };
+		23BD3886CA710A331BA8D857 = {isa = PBXBuildFile; fileRef = C491CE19072FADFC7EBC54DD; };
+		08EFF314F9918C57410B8EB4 = {isa = PBXBuildFile; fileRef = 4E1F37FA0943E2431AA84933; };
+		A1BD265B2E35CE531D6F6B0F = {isa = PBXBuildFile; fileRef = 3B73CE0B22ADBBF9F14D6611; };
+		4C583D3632D45C133E32D1A6 = {isa = PBXBuildFile; fileRef = ACE7CA81B7E4EF520FDE0EF1; };
+		DB58092F7068D3F02088F27B = {isa = PBXBuildFile; fileRef = 5CFF728A83325D59236B963F; };
+		984BF955C20920ADFD666940 = {isa = PBXBuildFile; fileRef = 375ED8CDCF0423B50D8B9A2D; };
+		83EC1A5330842BF301D88B15 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "main.swift"; path = "Sources/main.swift"; sourceTree = "<group>"; };
+		C491CE19072FADFC7EBC54DD = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CalcPractice.swift"; path = "Sources/CalcPractice.swift"; sourceTree = "<group>"; };
+		4E1F37FA0943E2431AA84933 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ShadowPractice.swift"; path = "Sources/ShadowPractice.swift"; sourceTree = "<group>"; };
+		3B73CE0B22ADBBF9F14D6611 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DMPractice.swift"; path = "Sources/DMPractice.swift"; sourceTree = "<group>"; };
+		ACE7CA81B7E4EF520FDE0EF1 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Checklist.swift"; path = "Sources/Checklist.swift"; sourceTree = "<group>"; };
+		5CFF728A83325D59236B963F = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Ask.swift"; path = "Sources/Ask.swift"; sourceTree = "<group>"; };
+		1EE5225349F48AD20D9B1A47 = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info.plist"; path = "Info.plist"; sourceTree = "<group>"; };
+		375ED8CDCF0423B50D8B9A2D = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "AppIcon.icns"; sourceTree = "<group>"; };
+		4C59EC59A01B151A68D40C0E = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LockIn.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		936B58736CE334FEDE89AC52 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		9E0DF70F3928F13B3715FAE8 = {isa = PBXGroup; children = (83EC1A5330842BF301D88B15, C491CE19072FADFC7EBC54DD, 4E1F37FA0943E2431AA84933, 3B73CE0B22ADBBF9F14D6611, ACE7CA81B7E4EF520FDE0EF1, 5CFF728A83325D59236B963F, 1EE5225349F48AD20D9B1A47, 375ED8CDCF0423B50D8B9A2D, 374DF54D42509D61F39544F0,); sourceTree = "<group>"; };
+		374DF54D42509D61F39544F0 = {isa = PBXGroup; children = (4C59EC59A01B151A68D40C0E,); name = Products; sourceTree = "<group>"; };
+		278E88A58A2A846A7B24A3DF = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 280DF71BED95240011BFA812;
+			buildPhases = (B2AA8473FA3567B324CF6A04, 936B58736CE334FEDE89AC52, 1D06933A493987293376AE59,);
+			buildRules = ();
+			dependencies = ();
+			name = "LockIn";
+			productName = "LockIn";
+			productReference = 4C59EC59A01B151A68D40C0E;
+			productType = "com.apple.product-type.application";
+		};
+		2D77596BA2765954C141BF41 = {
+			isa = PBXProject;
+			attributes = {BuildIndependentTargetsInParallel = 1; LastSwiftUpdateCheck = 1500; LastUpgradeCheck = 1500; };
+			buildConfigurationList = 3E102A092B5AAC9EF5ACCAA2;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (en, Base,);
+			mainGroup = 9E0DF70F3928F13B3715FAE8;
+			productRefGroup = 374DF54D42509D61F39544F0;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (278E88A58A2A846A7B24A3DF,);
+		};
+		1D06933A493987293376AE59 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (984BF955C20920ADFD666940,); runOnlyForDeploymentPostprocessing = 0; };
+		B2AA8473FA3567B324CF6A04 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (EFD612ACC943390105A59998, 23BD3886CA710A331BA8D857, 08EFF314F9918C57410B8EB4, A1BD265B2E35CE531D6F6B0F, 4C583D3632D45C133E32D1A6, DB58092F7068D3F02088F27B,); runOnlyForDeploymentPostprocessing = 0; };
+		255100FE970F8D9A6DAD8D19 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9785F3460258E8AAFC1DC813 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		7AFE24E84A3AF6DC0E43B9B5 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sey.lockin";
+				PRODUCT_NAME = "LockIn";
+				OTHER_SWIFT_FLAGS = "-parse-as-library";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1E069F7B24214D0D659881BC = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sey.lockin";
+				PRODUCT_NAME = "LockIn";
+				OTHER_SWIFT_FLAGS = "-parse-as-library";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		3E102A092B5AAC9EF5ACCAA2 = {isa = XCConfigurationList; buildConfigurations = (255100FE970F8D9A6DAD8D19, 9785F3460258E8AAFC1DC813,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		280DF71BED95240011BFA812 = {isa = XCConfigurationList; buildConfigurations = (7AFE24E84A3AF6DC0E43B9B5, 1E069F7B24214D0D659881BC,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+	};
+	rootObject = 2D77596BA2765954C141BF41;
+}
